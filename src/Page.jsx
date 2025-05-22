@@ -8,7 +8,7 @@ import SideBar from "./components/SideBar";
 const Page = () => {
   const { darkMode } = useContext(ThemeContext);
   return (
-    <div>
+    <div className="h-full w-full">
       <Header />
       <main>
         <div className="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem]">
@@ -22,7 +22,5 @@ const Page = () => {
 };
 
 export default Page;
-
-
 
 // className={` ${darkMode ? "dark" : ""}min-h-screen bg-white text-black dark:bg-black dark:text-white`}

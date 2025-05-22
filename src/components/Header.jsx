@@ -44,7 +44,7 @@ const Header = () => {
         <ul className="flex items-center space-x-5">
           <li>
             <a
-              className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
+              className="bg-primary-20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
               href="#"
             >
               <img src={Ring} width="24" height="24" alt="ring" />
@@ -52,7 +52,18 @@ const Header = () => {
           </li>
           <li>
             <a
-              className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
+              onClick={() => {
+                setDarkMode((prev) => {
+                  const newMode = !prev;
+                  if (newMode) {
+                    document.body.classList.add("dark");
+                  } else {
+                    document.body.classList.remove("dark");
+                  }
+                  return newMode;
+                });
+              }}
+              className="bg-primary-20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
               href="#"
             >
               <img
@@ -66,7 +77,7 @@ const Header = () => {
           <li>
             <a
               onClick={handleShowCart}
-              className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
+              className="bg-primary-20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
               href="#"
             >
               <img src={Cart} width="24" height="24" alt="cart" />

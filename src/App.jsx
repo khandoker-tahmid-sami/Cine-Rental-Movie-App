@@ -5,7 +5,7 @@ import { cartReducer, initialState } from "./reducers/CartReducers";
 import { ToastContainer, toast } from "react-toastify";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [state, dispatch] = useReducer(cartReducer, initialState);
   return (
     <>

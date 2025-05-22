@@ -64,14 +64,16 @@ const MovieCard = ({ movie }) => {
             alt={movie.title}
           />
           <figcaption className="pt-4">
-            <h3 className="text-xl mb-1">{movie.title}</h3>
+            <h3 className="text-xl mb-1 text-black dark:text-white ">
+              {movie.title}
+            </h3>
             <p className="text-[#575A6E] text-sm mb-2">{movie.genre}</p>
             <div className="flex items-center space-x-1 mb-5">
               <Rating value={movie.rating} />
             </div>
             <button
               onClick={(e) => handleAddToCart(e, movie)}
-              className="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
+              className="bg-primary rounded-lg py-3 px-28 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm cursor-pointer"
               href="#"
             >
               <img src="./assets/tag.svg" alt="" />

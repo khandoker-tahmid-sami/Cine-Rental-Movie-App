@@ -10,7 +10,7 @@ const SideBar = () => {
       <ul className="space-y-2">
         <li>
           <a
-            className="flex items-center space-x-2 px-5 py-3.5 rounded-lg bg-primary text-black"
+            className="flex items-center space-x-2 px-5 py-3.5 rounded-lg bg-primary "
             href="#"
           >
             <img src={Trending} width="24" height="24" alt="trending" />
@@ -19,7 +19,7 @@ const SideBar = () => {
         </li>
         <li>
           <a
-            className="flex items-center space-x-2 px-5 py-3.5 rounded-lg text-black"
+            className="flex items-center space-x-2 px-5 py-3.5 rounded-lg "
             href="#"
           >
             <img src={Release} width="24" height="24" alt="release" />
@@ -28,7 +28,7 @@ const SideBar = () => {
         </li>
         <li>
           <a
-            className="flex items-center space-x-2 px-5 py-3.5 rounded-lg text-black"
+            className="flex items-center space-x-2 px-5 py-3.5 rounded-lg "
             href="#"
           >
             <img src={CommingSoon} width="24" height="24" alt="comming soon" />
@@ -37,7 +37,7 @@ const SideBar = () => {
         </li>
         <li>
           <a
-            className="flex items-center space-x-2 px-5 py-3.5 rounded-lg text-black"
+            className="flex items-center space-x-2 px-5 py-3.5 rounded-lg "
             href="#"
           >
             <img src={Favourites} width="24" height="24" alt="favourites" />
@@ -46,7 +46,7 @@ const SideBar = () => {
         </li>
         <li>
           <a
-            className="flex items-center space-x-2 px-5 py-3.5 rounded-lg text-black"
+            className="flex items-center space-x-2 px-5 py-3.5 rounded-lg "
             href="#"
           >
             <img src={WatchLater} width="24" height="24" alt="watch later" />
