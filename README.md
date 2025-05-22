@@ -1,12 +1,54 @@
-# React + Vite
+# Cine Rental Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive movie rental dashboard built with React and Tailwind CSS. This project lets users explore a movie catalog, view details in a modal, and add movies to a cart with toast notifications. It is built using a component-based architecture and supports light/dark themes.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Movie Listing with Genre, Rating & Price
+- Movie Details Modal
+- Rating Component
+- Add to Cart Functionality
+- Global Cart State using Context API + Reducers
+- Cart Duplicate Prevention with Toastify Notifications
+- Light & Dark Mode Support
 
-## Expanding the ESLint configuration
+## Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Light Mode
+
+![Light Mode Screenshot](./Light%20Mode.png)
+
+### Dark Mode
+
+![Dark Mode Screenshot](./Dark%20Mode.png)
+
+## Tech Stack
+
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **JavaScript (ES6+)**
+
+## Installation
+
+Follow these steps to set up the project locally:
+
+## 1. Clone the repository
+
+git clone https://github.com/khandoker-tahmid-sami/Cine-Rental-Movie-App.git
+
+## 2. Navigate into the project directory
+
+cd Cine-Rental-Movie-App
+
+## 3. Install project dependencies
+
+npm install
+
+## 4. Start the development server
+
+npm run dev
+
+## 5. Open yout browser and go to
+
+http://localhost:5173

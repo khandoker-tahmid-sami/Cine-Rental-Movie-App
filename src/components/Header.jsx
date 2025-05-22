@@ -22,6 +22,18 @@ const Header = () => {
     setShowCart(false);
   };
 
+  const handleToggleMoode = () => {
+    setDarkMode((prev) => {
+      const newMode = !prev;
+      if (newMode) {
+        document.body.classList.add("dark");
+      } else {
+        document.body.classList.remove("dark");
+      }
+      return newMode;
+    });
+  };
+
   // const toggleDarkMode = () => {
   //   const newMode = !darkMode;
   //   setDarkMode(newMode);
@@ -52,17 +64,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              onClick={() => {
-                setDarkMode((prev) => {
-                  const newMode = !prev;
-                  if (newMode) {
-                    document.body.classList.add("dark");
-                  } else {
-                    document.body.classList.remove("dark");
-                  }
-                  return newMode;
-                });
-              }}
+              onClick={handleToggleMoode}
               className="bg-primary-20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
               href="#"
             >
